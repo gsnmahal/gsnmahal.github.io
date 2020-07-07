@@ -1,3 +1,31 @@
 .navbar-light .navbar-brand {
 }
 
+#promo {
+  text-align: center;
+  padding: 40px;
+  background: url(../../assets/img/gsn-thirumana-arangam-coimbatore-stg7v0e7fx.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#promo .jumbotron {
+  border-radius: 20px;
+  padding: 40px;
+  background-color: rgba(255,255,255,0.75);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  #promo .jumbotron {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  #promo {
+    padding: 20px;
+  }
+}
+
