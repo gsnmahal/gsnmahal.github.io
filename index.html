@@ -7,31 +7,112 @@
     <title>Mandapam</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Features-Clean.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
     <link rel="stylesheet" href="assets/css/Map-Clean.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md">
-        <div class="container-fluid"><a class="navbar-brand" href="#"><strong>GSN Mahal</strong></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+    <nav class="navbar navbar-light navbar-expand-md fixed-top bg-light" data-aos="fade">
+        <div class="container"><a class="navbar-brand" href="#"><strong>GSN Mahal</strong></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
                 id="navcol-1">
                 <ul class="nav navbar-nav">
                     <li class="nav-item" role="presentation"></li>
                     <li class="nav-item" role="presentation"></li>
                 </ul>
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#amenities">Amenities</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#location">Location</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
             </div>
         </div>
     </nav>
-    <div id="promo" style="filter: blur(0px);background-position: center;">
-        <div class="jumbotron" style="filter: blur(0px);">
-            <h1>An Event Hall for all your needs</h1>
-            <p>Enter your information in the contact us form below to get started.</p>
-            <p></p>
+    <div data-bs-parallax-bg="true" class="intro-img" style="height: 500px;background-image: url(assets/img/front-view-1.jpeg);background-position: center;background-size: cover;"></div>
+    <div id="about" class="map-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">About Us</h2>
+                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+            </div>
         </div>
     </div>
-    <div class="contact-clean">
+    <div id="amenities" class="features-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Amenities</h2>
+                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+            </div>
+            <div class="row features">
+                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-map-marker icon"></i>
+                    <h3 class="name">Works everywhere</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-clock-o icon"></i>
+                    <h3 class="name">Always available</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-list-alt icon"></i>
+                    <h3 class="name">Customizable</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-leaf icon"></i>
+                    <h3 class="name">Organic</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-plane icon"></i>
+                    <h3 class="name">Fast</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-phone icon"></i>
+                    <h3 class="name">Mobile-first</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gallery">
+        <div class="container map-clean">
+            <h2 class="text-center">Gallery</h2>
+            <div class="row row-cols-sm-2 row-cols-md-3 light-box-row">
+                <div class="col-auto col-lg-3 light-box-col">
+                    <div class="card"><a href="assets/img/main-hall.jpeg" target="_blank" data-lightbox="main-gallery"><img class="img-fluid" src="assets/img/main-hall.jpeg"></a></div>
+                </div>
+                <div class="col-auto col-lg-3 light-box-col">
+                    <div class="card"><a href="assets/img/outside-1.jpeg" target="_blank" data-lightbox="main-gallery"><img class="img-fluid" src="assets/img/outside-1.jpeg"></a></div>
+                </div>
+                <div class="col-auto col-lg-3 light-box-col">
+                    <div class="card"><a href="assets/img/outside-2.jpeg" target="_blank" data-lightbox="main-gallery"><img class="img-fluid" src="assets/img/outside-2.jpeg"></a></div>
+                </div>
+                <div class="col-auto col-lg-3 light-box-col">
+                    <div class="card"><a href="assets/img/temple.jpeg" target="_blank" data-lightbox="main-gallery"><img class="img-fluid" src="assets/img/temple.jpeg"></a></div>
+                </div>
+                <div class="col-auto col-lg-3 light-box-col">
+                    <div class="card"><a href="assets/img/outside-4.jpeg" target="_blank" data-lightbox="main-gallery"><img class="img-fluid" src="assets/img/outside-4.jpeg"></a></div>
+                </div>
+                <div class="col-auto col-lg-3 light-box-col">
+                    <div class="card"><a href="assets/img/outside-3.jpeg" target="_blank" data-lightbox="main-gallery"><img class="img-fluid" src="assets/img/outside-3.jpeg"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="location" class="map-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Convenient Location </h2>
+                <p class="text-center">On the trichy road, the hall in only a 30 mins drive from the city.&nbsp;</p><iframe allowfullscreen="" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC6AeTFUnYavTgAGZjupLIoXhT3pfREEfU&amp;q=+GSN+Thirumana+Arangam%2C+Near+Pappampatti+pirivu%2C+road%2Csulur%2C+Trichy+Rd%2C+Coimbatore%2C+Tamil+Nadu+641402&amp;zoom=15"
+                    width="100%" height="450"></iframe></div>
+        </div>
+    </div>
+    <div id="contact" class="contact-clean">
         <form data-bss-recipient="6ed36f152ce2ffd25c976961bec34efb" data-bss-subject="Mandapam Enquiry">
             <h2 class="text-center">Contact us</h2>
             <div class="form-group"><input class="border rounded form-control" type="text" name="name" placeholder="Name" autofocus=""></div>
@@ -41,18 +122,12 @@
             <div class="form-group"><button class="btn btn-primary" type="submit">send </button></div>
         </form>
     </div>
-    <div class="map-clean">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">Location </h2>
-            </div>
-        </div>
-    </div>
-    <div class="container"><iframe allowfullscreen="" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC6AeTFUnYavTgAGZjupLIoXhT3pfREEfU&amp;q=+GSN+Thirumana+Arangam%2C+Near+Pappampatti+pirivu%2C+road%2Csulur%2C+Trichy+Rd%2C+Coimbatore%2C+Tamil+Nadu+641402&amp;zoom=15"
-            width="100%" height="450"></iframe></div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/smart-forms.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.2/js/lightbox.min.js"></script>
 </body>
 
 </html>

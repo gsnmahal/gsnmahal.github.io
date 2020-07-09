@@ -7,6 +7,7 @@
   background: url(../../assets/img/gsn-thirumana-arangam-coimbatore-stg7v0e7fx.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 56px;
 }
 
 #promo .jumbotron {
@@ -27,5 +28,21 @@
   #promo {
     padding: 20px;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.light-box-row {
+  padding-bottom: 40px;
+}
+
+.light-box-col {
+  margin-top: 20px;
+}
+
+.intro-img {
+  margin-top: 40px;
 }
 
