@@ -46,3 +46,11 @@ html {
   margin-top: 40px;
 }
 
+h2 {
+  /*margin-top: 100px;*/
+}
+
+.alternate-bg-color {
+  background-color: #eef4f7;
+}
+
